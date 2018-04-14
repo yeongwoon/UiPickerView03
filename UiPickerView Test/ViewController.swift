@@ -17,9 +17,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         myPickerView.delegate = self
+        myPickerView.dataSource = self
     }
     
-    // UIPickerViewDataSoure 
+    // UIPickerViewDataSoure
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
