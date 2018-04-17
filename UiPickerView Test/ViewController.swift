@@ -32,6 +32,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             return 100
         }
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
             return "First \(row)"
@@ -42,9 +43,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        col0Label.text = "First \(row)"
-//        col1Label.text = "Second \(row)"
-        
+
         if component == 0 {
             col0Label.text = "First \(row)"
         } else {
