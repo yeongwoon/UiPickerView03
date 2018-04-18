@@ -50,6 +50,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             col1Label.text = "Second \(row)"
         }
     }
+    
+//    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+//        return 15
+//    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
+    }
 
 }
 
