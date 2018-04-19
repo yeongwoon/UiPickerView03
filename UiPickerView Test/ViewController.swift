@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  UiPickerView Test
-//
-//  Created by 김종현 on 2018. 4. 14..
-//  Copyright © 2018년 김종현. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -27,7 +19,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
-            return 10
+            return 100
         } else {
             return 100
         }
@@ -35,9 +27,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
-            return "First \(row)"
+            return "1st component \(row)"
         } else {
-            return "Second \(row)"
+            return "2nd component \(row)"
         }
     }
     
@@ -45,9 +37,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
         if component == 0 {
-            col0Label.text = "First \(row)"
+            col0Label.text = "1st comp \(row)"
         } else {
-            col1Label.text = "Second \(row)"
+            col1Label.text = "2nd comp \(row)"
         }
     }
     
